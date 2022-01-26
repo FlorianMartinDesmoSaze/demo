@@ -3,18 +3,40 @@
 {% block title %}Hello BlogController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/laragon/www/demo/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/laragon/www/demo/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <section class="article">
+        <article>
+            <h2>Titre de l'article</h2>
+            <div class="metadata">Ecrit le 28/01/2022</div>
+            <div class="content">
+                <img src="http://placehold.it/350x150" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, vitae nulla! Voluptate quas assumenda vel?</p>
+                <p>Reprehenderit odit nisi numquam ipsa soluta inventore in illum, officia, provident fugit voluptate animi ad.</p>
+                <a href="{{ path('blog_show') }}" class="btn-secondary">lire la suite</a>
+            </div>
+        </article>
+    </section>
+    <section class="article">
+        <article>
+            <h2>Titre de l'article</h2>
+            <div class="metadata">Ecrit le 28/01/2022</div>
+            <div class="content">
+                <img src="http://placehold.it/350x150" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos natus unde ullam a aliquid?</p>
+                <p>Similique explicabo, neque magnam placeat tempora, facilis quia quaerat adipisci rem odit, harum quisquam voluptatibus!</p>
+                <a href="" class="btn-secondary">lire la suite</a>
+            </div>
+        </article>
+    </section>
+    <section class="article">
+        <article>
+            <h2>Titre de l'article</h2>
+            <div class="metadata">Ecrit le 28/01/2022</div>
+            <div class="content">
+                <img src="http://placehold.it/350x150" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci reprehenderit quae quibusdam magni dolores animi!</p>
+                <p>Numquam cum deserunt vero ea doloremque magni tempore vel eius perferendis temporibus, architecto maxime animi.</p>
+                <a href="" class="btn-secondary">lire la suite</a>
+            </div>
+        </article>
+    </section>
 {% endblock %}
